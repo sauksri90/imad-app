@@ -6,15 +6,37 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleone = {
-  title: 'Article One ! Saurabh Srivastava',
-  heading: 'Article One',
-  date: 'August 12, 2017',
-  content: `<p>
-             This is the content for my first article.
+var articles = {
+    articleone = {
+    title: 'Article One ! Saurabh Srivastava',
+    heading: 'Article One',
+    date: 'August 12, 2017',
+    content: `<p>
+         This is the content for my first article.
+     </p>`
+    
+},
+    articletwo ={
+        title: 'Article Two ! Saurabh Srivastava',
+        heading: 'Article Two',
+        date: 'August 12, 2017',
+        content: `<p>
+             This is the content for my second article.
          </p>`
+        
+        },
+    articlethree = {
+        title: 'Article Two ! Saurabh Srivastava',
+        heading: 'Article Two',
+        date: 'August 12, 2017',
+        content: `<p>
+             This is the content for my second article.
+         </p>`
+        
+        
+    }
+    };
   
-  };
 
 function createTemplate(data){
  var title= data.title;
